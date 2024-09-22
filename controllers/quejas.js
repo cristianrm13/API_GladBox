@@ -34,7 +34,6 @@ const getQuejaByCategory = async (req, res) => {
     }
 };
 
-
 const actualizarQueja = async (req, res) => {
 	try {
 		const actualizarQueja = await catalog.findByIdAndUpdate(

@@ -2,7 +2,7 @@ const router = require('express').Router();
 
 const { crearQueja, obtenerQueja, actualizarQueja, eliminarQueja, getQuejaByCategory } = require('../controllers/quejas');
 
-//Rutas para Quejas
+//Rutas para quejas
 router.post('/quejas', crearQueja);
 router.get('/quejas', obtenerQueja);
 router.get('/quejas/categoria/:category', getQuejaByCategory);
