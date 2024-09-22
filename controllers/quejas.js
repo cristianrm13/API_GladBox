@@ -24,7 +24,7 @@ const getQuejaByCategory = async (req, res) => {
     const { category } = req.params;
 
     try {
-        const complaints = await catalog.find({ category }); // Buscar quejas por categoría
+        const complaints = await catalog.find({ category });
         if (complaints.length === 0) {
             return res.status(404).json({ message: "No se encontraron quejas para esta categoría." });
         }
